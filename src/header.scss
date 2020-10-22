@@ -1,0 +1,74 @@
+#headerForMail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00C73C;
+    padding: 5px 0;
+}
+
+.service_title {
+    color: white;
+
+    @font-face {
+        font-family: 'Nanum Gothic Coding', monospace;
+        src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+    }
+
+    em {
+        font-size: 25px;
+        font-weight: 900;
+    }
+}
+
+.gnb_area {
+    ul {
+        font-size: 0;
+    }
+    li {
+        font-size: 1px;
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 10px;
+    }
+    .gnb_icon {
+        display: inline-block;
+        vertical-align: top;
+        width: 30px;
+        height: 30px;
+        background: #068B2A
+    }
+    .on .gnb_icon{
+        background: #FFFFFF;
+    }
+}
+
+.login_area {
+    .login_myprofile {
+        display: block;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+    .login_myprofile:hover {
+       text-decoration: underline;
+    }
+
+    .btn_quickview {
+        position: relative;
+        display: inline-block;
+        .icon {
+            width: 15px;
+            height: 15px;
+            background: #FFFFFF;
+        }
+    }
+    .btn_quickview::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 0;
+        background: #068B2A;
+    }
+}
