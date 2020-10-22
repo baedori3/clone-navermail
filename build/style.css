@@ -154,11 +154,23 @@ hr {
   background: #FFFFFF; }
 
 .login_area .login_myprofile {
-  display: block;
-  font-size: 10px;
+  display: inline-block;
+  font-size: 12px;
   color: #FFFFFF; }
 
-.login_area .login_myprofile:hover {
+.login_area .img_profile {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%; }
+
+.login_area .myname {
+  display: inline-block;
+  vertical-align: middle; }
+
+.login_area .myname:hover {
   text-decoration: underline; }
 
 .login_area .btn_quickview {
@@ -176,4 +188,44 @@ hr {
   height: 100%;
   left: 0;
   background: #068B2A; }
+
+.snb_section {
+  display: none; }
+
+.snb_section.open {
+  display: inline-block;
+  width: 250px;
+  color: #707070; }
+
+.quick_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .quick_menu .quick_menu_write {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .quick_menu .btn_quick_write {
+    display: block;
+    width: 105px;
+    height: 35px;
+    background: #00C73C;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    line-height: 35px; }
+  .quick_menu .quick_menu_sort {
+    display: flex;
+    justify-content: space-between; }
+    .quick_menu .quick_menu_sort .btn_quick {
+      display: block; }
+      .quick_menu .quick_menu_sort .btn_quick .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #707070; }
+      .quick_menu .quick_menu_sort .btn_quick .icon.on {
+        background: #00C73C; }
 

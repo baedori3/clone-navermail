@@ -46,13 +46,27 @@
 
 .login_area {
     .login_myprofile {
-        display: block;
-        font-size: 10px;
+        display: inline-block;
+        font-size: 12px;
         color: #FFFFFF;
     }
-    .login_myprofile:hover {
-       text-decoration: underline;
+
+    .img_profile {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 50%;
     }
+
+    .myname {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .myname:hover {
+        text-decoration: underline;
+     }
 
     .btn_quickview {
         position: relative;
