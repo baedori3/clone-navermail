@@ -196,13 +196,18 @@ hr {
     left: 0;
     background: #068B2A; }
 
+#container {
+  height: calc(100% - 60px); }
+
 .snb_section {
   display: none; }
 
 .snb_section.open {
   display: inline-block;
   width: 250px;
-  color: #707070; }
+  height: 100%;
+  color: #707070;
+  border-right: 1px solid black; }
 
 .quick_menu {
   display: flex;
@@ -235,4 +240,7 @@ hr {
         background: #707070; }
       .quick_menu .quick_menu_sort .btn_quick .icon.on {
         background: #00C73C; }
+
+#root {
+  height: 100%; }
 
