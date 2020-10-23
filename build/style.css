@@ -153,41 +153,48 @@ hr {
 .gnb_area .on .gnb_icon {
   background: #FFFFFF; }
 
-.login_area .login_myprofile {
-  display: inline-block;
-  font-size: 12px;
-  color: #FFFFFF; }
-
-.login_area .img_profile {
-  display: inline-block;
-  vertical-align: middle;
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 50%; }
-
-.login_area .myname {
-  display: inline-block;
-  vertical-align: middle; }
-
-.login_area .myname:hover {
-  text-decoration: underline; }
-
-.login_area .btn_quickview {
-  position: relative;
-  display: inline-block; }
-  .login_area .btn_quickview .icon {
-    width: 15px;
-    height: 15px;
-    background: #FFFFFF; }
-
-.login_area .btn_quickview::before {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 0;
-  background: #068B2A; }
+.login_area {
+  line-height: 50px;
+  font-size: 0; }
+  .login_area .login_myprofile {
+    display: inline-block;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-right: 15px; }
+  .login_area .img_profile {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%; }
+  .login_area .myname {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px; }
+  .login_area .myname:hover {
+    text-decoration: underline; }
+  .login_area .btn_quickview {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    vertical-align: top;
+    text-align: center; }
+    .login_area .btn_quickview .icon {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: #FFFFFF;
+      margin-top: 15px; }
+  .login_area .btn_quickview::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    top: -5px;
+    left: 0;
+    background: #068B2A; }
 
 .snb_section {
   display: none; }
