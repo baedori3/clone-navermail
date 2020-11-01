@@ -1,100 +1,21 @@
 #container {
     height: calc(100% - 60px);
-}
-
-.snb_section {
-    display: none;
-}
-.snb_section.open {
-    display: inline-block;
-    width: 250px;
-    height: 100%;
-    color: #707070;
-    border-right: 1px solid black;
-}
-
-.quick_menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    .quick_menu_write {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn_quick_write {
-        display: block;
-        width: 105px;
-        height: 35px;
-        background: #00C73C;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 13px;
-        text-align: center;
-        line-height: 35px;
-    }
-    .btn_quick_write:not(:first-child) {
-        border-left: 1px solid #ffffff;
+
+    .snb_section {
+        display: none;
     }
 
-    .quick_menu_sort {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        
-        .btn_quick {
+    &.open {
+        .snb_section {
             display: block;
-            text-align: center;
-            .icon {
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background: #707070;
-            }
-            .icon.on {
-                background: #00C73C;
-            }
-            .btn_text {
-                display: block;
-            }
-        }
-    }
-}
-
-.snb {
-    li {
-        cursor: pointer;
-        padding: 5px 10px;
-        font-size: 13px;
-
-        &:hover {
-            background-color: #eeeeee;
-        }
-
-        & > a:first-child {
-            font-weight: 700;
-        }
-
-        .btn_inner {
-            float: right;
-            border: 1px solid #c7c7c7;
+            width: 250px;
             color: #707070;
-            font-size: 12px;
-            padding: 2px;
+            border-right: 1px solid black;
+        }
+        .content_section {
+            flex: 1;
         }
     }
-
 }
 
-
-.quick_menu_write {
-    margin-top: 20px;
-}
-.quick_menu_sort {
-    margin-top: 20px;
-
-    .btn_text {
-        margin-top: 10px;
-    }
-}
