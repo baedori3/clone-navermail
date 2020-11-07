@@ -118,8 +118,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #00C73C;
-  padding: 5px 0; }
+  background: #00C73C; }
 
 .service_title {
   color: white; }
@@ -191,8 +190,7 @@ hr {
     content: '';
     position: absolute;
     width: 1px;
-    height: 60px;
-    top: -5px;
+    height: 50px;
     left: 0;
     background: #068B2A; }
 
@@ -255,16 +253,17 @@ hr {
   .snb li:hover {
     background-color: #eeeeee; }
   .snb li > a:first-child {
-    font-weight: 700;
     line-height: 20px;
-    position: relative; }
+    position: relative;
+    padding-left: 30px; }
     .snb li > a:first-child::before {
       position: absolute;
       display: inline-block;
       width: 20px;
       height: 20px;
       background: #707070;
-      content: ''; }
+      content: '';
+      margin-left: -25px; }
   .snb li .btn_inner {
     float: right;
     border: 1px solid #c7c7c7;
