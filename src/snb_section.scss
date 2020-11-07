@@ -60,8 +60,19 @@
         }
 
         & > a:first-child {
-            font-weight: 700;
             line-height: 20px;
+            position: relative;
+            padding-left: 30px;
+
+            &::before {
+                position: absolute;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: #707070;
+                content: '';
+                margin-left: -25px;
+            }
         }
 
         .btn_inner {

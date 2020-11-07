@@ -256,7 +256,15 @@ hr {
     background-color: #eeeeee; }
   .snb li > a:first-child {
     font-weight: 700;
-    line-height: 20px; }
+    line-height: 20px;
+    position: relative; }
+    .snb li > a:first-child::before {
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #707070;
+      content: ''; }
   .snb li .btn_inner {
     float: right;
     border: 1px solid #c7c7c7;
@@ -278,6 +286,9 @@ hr {
 .content_mail table {
   border-top: 2px solid #6a6a6a;
   width: 100%; }
+
+.content_mail tr {
+  line-height: 40px; }
 
 #root {
   height: 100%; }
