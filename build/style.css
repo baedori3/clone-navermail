@@ -122,7 +122,8 @@ hr {
   height: 50px; }
 
 .service_title {
-  color: white; }
+  color: white;
+  padding-left: 20px; }
 
 @font-face {
   .service_title {
